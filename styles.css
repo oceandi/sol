@@ -213,7 +213,7 @@ a:active {
 @media screen and (max-width: 767px) {
     .long1 {
         height: 400px;
-        padding: 55px 0px 0px 0px;
+        padding: 55px;
     }
     
     .long2 {
@@ -226,6 +226,20 @@ a:active {
         height: 500px;
         border-left-width: 0; /* Remove left border */
         border-right-width: 0; /* Remove right border */
-        padding: 150px 0px 0px 0px;
+        padding: 115px 0px 0px 0px;
+    }
+
+    #short-left {
+        border-top-width: 6px;
+        border-bottom-width: 6px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+    }
+    
+    #short-right {
+        border-top-width: 6px;
+        border-bottom-width: 6px;
+        border-left-width: 0px;
+        border-right-width: 0px;
     }
 }
