@@ -1,8 +1,16 @@
+@font-face {
+    font-family: 'SF-Pro';
+    src: url('/fonts/SF-Pro.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html, body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "SF-Pro","Helvetica Neue","Helvetica","Arial",sans-serif
 }
 
 .desktop {
@@ -23,22 +31,22 @@ html, body {
 }
 
 .image1{
-    background-image: url(https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/homepage/fiber.png);
+    background-image: url(https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/homepage/bg.png)
 }
 .image2{
     background-image: url();
 }
 .image3{
-    background-image: url(https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/superbox/sbox.png);
+    background-image: linear-gradient(#addcee, #eff5f7);
 }
 .image4{
-    background-image: url(https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/tv/tv.png);
+    background-image: conic-gradient(#000, #202020);
 }
 .image5{
-    background-image: url(https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/gb2/gb2_2160.png);
+    background-color: #f5f5f7;
 }
 .image6{
-    background-image: url(https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/dsl/2160.png);
+    background-image: linear-gradient(#fff, #ffd131);
 }
 
 .long1 {
@@ -47,9 +55,9 @@ html, body {
     width: 100%;
     height: 500px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     padding: 75px;
     background-size: cover; /* Arka planı kapsayacak şekilde ayarlar */
     background-position: center; /* Arka planı ortalar */
@@ -84,16 +92,38 @@ html, body {
     border-radius: 0px;
 }
 
+.highway3 {
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #1d1d1f;
+    margin: 36px 0px 0px 0px;
+    text-align: center;
+}
+
+#white {
+    color: white;
+}
+
+.subhead {
+    font-size: 19px;
+    line-height: 1.21053;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0px 17px 0px;
+}
+
 .short {
     box-sizing: border-box;
     flex-shrink: 0;
     width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 115px 0px 0px 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:10px 10px 0px 10px;
     overflow: hidden;
     position: relative;
     align-content: center;
@@ -116,6 +146,16 @@ html, body {
     border-bottom-width: 6px;
     border-left-width: 6px;
     border-right-width: 12px;
+}
+
+.allbutton {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    height: fit-content;
+    width: fit-content;
 }
 
 .wbutton1 {
@@ -147,7 +187,7 @@ html, body {
     line-height: normal;
     border-style: solid;
     border-radius: 20px;
-    margin: 25px 5px;
+    margin: 0px 5px;
     padding: 9px 19px;
     font-size: 12px;
     background-color: #0071e3;
@@ -159,7 +199,7 @@ html, body {
     line-height: normal;
     border-style: solid;
     border-radius: 20px;
-    margin: 25px 8px;
+    margin: 0px 8px;
     padding: 8px 16px;
     font-size: 12px;
     background-color: rgba(0, 0, 0, 0);
@@ -197,6 +237,40 @@ a:active {
     color: #000;
 }
 
+.superbox {
+    margin-top: 20px;
+    background-size: cover;
+    height: 62%;
+}
+
+.tv {
+    height: 70px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.tvdevice {
+    height: 62%;
+    width: auto;
+}
+
+.gb2 {
+    height: 50%;
+    width: auto;
+    margin-top: 65px;
+}
+
+.vdsl {
+    height: 50%;
+    width: auto;
+    margin-top: 50px;
+}
+
+.earth {
+    height: 100%;
+    margin-top: 20px;
+}
+
 /* Mac 1200px and 1919px */
 @media screen and (max-width: 1919px) {
     .desktop {
@@ -226,7 +300,6 @@ a:active {
         height: 500px;
         border-left-width: 0; /* Remove left border */
         border-right-width: 0; /* Remove right border */
-        padding: 115px 0px 0px 0px;
     }
 
     #short-left {
