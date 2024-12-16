@@ -31,7 +31,7 @@ html, body {
 }
 
 .image1{
-    background-image: url(https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/homepage/bg.png)
+    background: linear-gradient(to bottom, #0D1443 0%, #394F9C 40%, #A6B6E8 80%, #FFFFFF 100%);
 }
 .image2{
     background-image: url();
