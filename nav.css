@@ -6,7 +6,9 @@
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 100%;;
+  width: 100%;
+  box-sizing: border-box;
+  justify-items: center;
 }
 
 .nav-menu {
@@ -42,4 +44,60 @@
 .fab {
   height: 14px;
   width: 14px;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background-color: #333;
+  height: 2px;
+  width: 25px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 880px) {
+  .navbar {
+    background-color: #fafafc;
+    justify-items: end;
+    height: 48px;
+    align-content: center;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fafafc;
+    width: 100%;
+    padding: 3px 48px 3px 48px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    align-items: start;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu a {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.007em;
+  }
 }
