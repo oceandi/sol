@@ -80,7 +80,7 @@
     left: 0;
     background-color: #fafafc;
     width: 100%;
-    padding: 3px 48px 3px 48px;
+    padding: 3px 48px 48px 48px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     align-items: start;
     transition: transform 0.3s ease, top 0.3s ease;
