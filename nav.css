@@ -70,6 +70,9 @@
     height: 48px;
     align-content: center;
     justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    
   }
 
   .nav-menu {
