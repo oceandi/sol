@@ -236,6 +236,10 @@ a:active {
     color: #000;
 }
 
+.noact:hover {
+    background: none;
+}
+
 .superbox {
     margin-block-start: 20px;
     background-size: cover;
