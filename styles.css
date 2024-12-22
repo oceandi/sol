@@ -329,8 +329,6 @@ ul.legal {
 
 /* Macbook 768px and 1199px */
 @media screen and (max-width: 1199px) {
-    .desktop {}
-
     .endofpage {
         margin: 15px 15px 15px 15px;
     }
