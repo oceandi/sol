@@ -366,4 +366,8 @@ ul.legal {
         border-inline-start-width: 0px;
         border-inline-end-width: 0px;
     }
+
+    .endofpage {
+        font-size: 10px;
+    }
 }
