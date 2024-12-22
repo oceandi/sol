@@ -9,18 +9,18 @@
         Turkcell Superonline’ın yüksek hızlı internet ve özel fırsatlarla dolu kampanya dünyasında yeriniz hazır! Şimdi keşfedin.">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="pop.css">
         <link rel="icon" href="https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/turkcell.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     </head>
     <body >
         <nav class="navbar">
             <img class="navlogo" src="https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/homepage/sol.png">
             <div class="nwa">
                 <ul class="nav-menu">
-                <li><a href="#">İşlemler</a></li>
                 <li><a href="#">Fiber</a></li>
                 <li><a href="#">VDSL</a></li>
                 <li><a href="#">SuperBox</a></li>
-                <li><a href="#">Kablo İnternet</a></li>
                 <li><a href="#">TV+</a></li>
                 <li><a href="#">Game+</a></li>
                 <li><a href="#">Servisler</a></li>
@@ -37,8 +37,8 @@
             <div class="long1 image1">
                 <h3 class="highway3" id="white">Işık Hızında Fiber İnternet</h3>
                 <div class="allbutton">
-                    <a href="#" class="wbutton1">Daha Fazla Bilgi</a>
-                    <a href="#" class="wbutton2">Başvurun</a>
+                    <a href="/fiber-internet.html" class="wbutton1">Daha Fazla Bilgi</a>
+                    <a href="" id="fiberButton" class="wbutton2">Başvurun</a>
                 </div>
                 <img class="earth" src="https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/homepage/TKC.png" alt="turkcell">
             </div>
@@ -47,8 +47,8 @@
                     <h3 class="highway3">SuperBox</h3>
                     <p class="subhead">Altyapıya ihtiyaç duymayan<br>sınırsız bir dünya.</p>
                     <div class="allbutton">
-                        <a href="#" class="bbutton1">Daha Fazla Bilgi</a>
-                        <a href="#" class="bbutton2">Başvurun</a>
+                        <a href="/superbox.html" class="bbutton1">Daha Fazla Bilgi</a>
+                        <a href="" id="superboxButton" class="bbutton2">Başvurun</a>
                     </div>
                     <img class="superbox" src="https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/superbox/superbox.jpg">
                 </div>
@@ -56,8 +56,8 @@
                     <img class="tv" src="https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/tv/tvlogocompressed.png">
                     <p class="subhead" id="white">Eğlenceye yeni bir soluk geldi.</p>
                     <div class="allbutton">
-                        <a href="#" class="bbutton1">Daha Fazla Bilgi</a>
-                        <a href="#" class="bbutton2">Başvurun</a>
+                        <a href="/tv-plus.html" class="bbutton1">Daha Fazla Bilgi</a>
+                        <a href="" id="tvPlusButton" class="bbutton2">Başvurun</a>
                     </div>
                     <img class="tvdevice" src="https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/tv/tvd.png">
                 </div>
@@ -67,8 +67,8 @@
                     <h3 class="highway3">Galaxy Buds 2</h3>
                     <p class="subhead">Bu yıl cihazlarınız bizden.</p>
                     <div class="allbutton">
-                        <a href="#" class="bbutton1">Daha Fazla Bilgi</a>
-                        <a href="#" class="bbutton2">Başvurun</a>
+                        <a href="/aksesuarlar.html" class="bbutton1">Daha Fazla Bilgi</a>
+                        <a href="" id="budsButton" class="bbutton2">Başvurun</a>
                     </div>
                     <img class="gb2" src="https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/gb2/gb2c.png">
                 </div>
@@ -76,8 +76,8 @@
                     <h3 class="highway3">VDSL</h3>
                     <p class="subhead">100 Mbps'e varan hızlarla.</p>
                     <div class="allbutton">
-                        <a href="#" class="bbutton1">Daha Fazla Bilgi</a>
-                        <a href="#" class="bbutton2">Başvurun</a>
+                        <a href="/vdsl.html" class="bbutton1">Daha Fazla Bilgi</a>
+                        <a href="" id="vdslButton" class="bbutton2">Başvurun</a>
                     </div>
                     <img class="vdsl" src="https://raw.githubusercontent.com/oceandi/links/refs/heads/main/ISP/images/dsl/vdsl.png">
                 </div>
@@ -96,6 +96,116 @@
                         <a href="https://vknsorgula.net/2730624106.html"><li class="legalli">Bilgi Toplumu Hizmetleri</li></a>
                     </ul>
                 </div>
+            </div>
+        </div>
+        <div id="fiberPopup" class="form-popup">
+            <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <h2 style="margin-bottom: 20px; font-size: 24px;">Fiber İnternet Başvuru Formu</h2>
+                <form id="fiberForm" class="popup-form" action="https://formspree.io/f/mkggwaoa" method="POST">
+                    <input type="hidden" name="form_type" value="fiber">
+                    <div class="form-group">
+                        <label for="fiber-name">Ad</label>
+                        <input type="text" id="fiber-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fiber-surname">Soyad</label>
+                        <input type="text" id="fiber-surname" name="surname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fiber-phone">Telefon</label>
+                        <input type="tel" id="fiber-phone" name="phone" required>
+                    </div>
+                    <button type="submit" class="submit-button">Gönder</button>
+                </form>
+            </div>
+        </div>
+        <div id="superboxPopup" class="form-popup">
+            <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <h2 style="margin-bottom: 20px; font-size: 24px;">SuperBox Başvuru Formu</h2>
+                <form id="superboxForm" class="popup-form" action="https://formspree.io/f/xqaazopb" method="POST">
+                    <input type="hidden" name="form_type" value="superbox">
+                    <div class="form-group">
+                        <label for="fiber-name">Ad</label>
+                        <input type="text" id="fiber-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fiber-surname">Soyad</label>
+                        <input type="text" id="fiber-surname" name="surname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fiber-phone">Telefon</label>
+                        <input type="tel" id="fiber-phone" name="phone" required>
+                    </div>
+                    <button type="submit" class="submit-button">Gönder</button>
+                </form>
+            </div>
+        </div>
+        <div id="tvPlusPopup" class="form-popup">
+            <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <h2 style="margin-bottom: 20px; font-size: 24px;">TV+ Başvuru Formu</h2>
+                <form id="tvPlusForm" class="popup-form" action="https://formspree.io/f/xzzzpqej" method="POST">
+                    <input type="hidden" name="form_type" value="tv_plus">
+                    <div class="form-group">
+                        <label for="fiber-name">Ad</label>
+                        <input type="text" id="fiber-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fiber-surname">Soyad</label>
+                        <input type="text" id="fiber-surname" name="surname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fiber-phone">Telefon</label>
+                        <input type="tel" id="fiber-phone" name="phone" required>
+                    </div>
+                    <button type="submit" class="submit-button">Gönder</button>
+                </form>
+            </div>
+        </div>
+        <div id="vdslPopup" class="form-popup">
+            <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <h2 style="margin-bottom: 20px; font-size: 24px;">VDSL Başvuru Formu</h2>
+                <form id="vdslForm" class="popup-form" action="https://formspree.io/f/xeoojwap" method="POST">
+                    <input type="hidden" name="form_type" value="vdsl">
+                    <div class="form-group">
+                        <label for="fiber-name">Ad</label>
+                        <input type="text" id="fiber-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fiber-surname">Soyad</label>
+                        <input type="text" id="fiber-surname" name="surname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fiber-phone">Telefon</label>
+                        <input type="tel" id="fiber-phone" name="phone" required>
+                    </div>
+                    <button type="submit" class="submit-button">Gönder</button>
+                </form>
+            </div>
+        </div>
+        <div id="budsPopup" class="form-popup">
+            <div class="popup-content">
+                <button class="close-popup">&times;</button>
+                <h2 style="margin-bottom: 20px; font-size: 24px;">Galaxy Buds 2 Kampanyası</h2>
+                <form id="budsForm" class="popup-form" action="https://formspree.io/f/xyzzgaed" method="POST">
+                    <input type="hidden" name="form_type" value="galaxy_buds">
+                    <div class="form-group">
+                        <label for="fiber-name">Ad</label>
+                        <input type="text" id="fiber-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fiber-surname">Soyad</label>
+                        <input type="text" id="fiber-surname" name="surname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fiber-phone">Telefon</label>
+                        <input type="tel" id="fiber-phone" name="phone" required>
+                    </div>
+                    <button type="submit" class="submit-button">Gönder</button>
+                </form>
             </div>
         </div>
         <script src="scripts.js"></script>
