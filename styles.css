@@ -14,8 +14,8 @@ html, body {
 }
 
 .desktop {
-    width: 1920px;
-    height: min-content;
+    inline-size: 1920px;
+    block-size: min-content;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -52,8 +52,8 @@ html, body {
 .long1 {
     box-sizing: border-box;
     flex-shrink: 0;
-    width: 100%;
-    height: 500px;
+    inline-size: 100%;
+    block-size: 500px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -68,17 +68,17 @@ html, body {
     border-radius: 0px 0px 0px 0px;
     border-color: #fff;
     border-style: solid;
-    border-top-width: 0px;
-    border-bottom-width: 6px;
-    border-right-width: 0px;
-    border-left-width: 0px;
+    border-block-start-width: 0px;
+    border-block-end-width: 6px;
+    border-inline-end-width: 0px;
+    border-inline-start-width: 0px;
     color: #f5f5f7;
 }
 
 .long2 {
     flex-shrink: 0;
-    width: 100%;
-    height: 450px;
+    inline-size: 100%;
+    block-size: 450px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -116,8 +116,8 @@ html, body {
 .short {
     box-sizing: border-box;
     flex-shrink: 0;
-    width: 50%;
-    height: 100%;
+    inline-size: 50%;
+    block-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -134,17 +134,17 @@ html, body {
 }
 
 #short-left {
-    border-top-width: 6px;
-    border-bottom-width: 6px;
-    border-left-width: 12px;
-    border-right-width: 6px;
+    border-block-start-width: 6px;
+    border-block-end-width: 6px;
+    border-inline-start-width: 12px;
+    border-inline-end-width: 6px;
 }
 
 #short-right {
-    border-top-width: 6px;
-    border-bottom-width: 6px;
-    border-left-width: 6px;
-    border-right-width: 12px;
+    border-block-start-width: 6px;
+    border-block-end-width: 6px;
+    border-inline-start-width: 6px;
+    border-inline-end-width: 12px;
 }
 
 .allbutton {
@@ -153,8 +153,8 @@ html, body {
     align-content: center;
     justify-content: center;
     align-items: flex-start;
-    height: fit-content;
-    width: fit-content;
+    block-size: fit-content;
+    inline-size: fit-content;
 }
 
 .wbutton1 {
@@ -237,42 +237,42 @@ a:active {
 }
 
 .superbox {
-    margin-top: 20px;
+    margin-block-start: 20px;
     background-size: cover;
-    height: 62%;
+    block-size: 62%;
 }
 
 .tv {
-    height: 70px;
-    width: auto;
-    margin-top: 20px;
+    block-size: 70px;
+    inline-size: auto;
+    margin-block-start: 20px;
 }
 
 .tvdevice {
-    height: 62%;
-    width: auto;
+    block-size: 62%;
+    inline-size: auto;
 }
 
 .gb2 {
-    height: 50%;
-    width: auto;
-    margin-top: 65px;
+    block-size: 50%;
+    inline-size: auto;
+    margin-block-start: 65px;
 }
 
 .vdsl {
-    height: 50%;
-    width: auto;
-    margin-top: 50px;
+    block-size: 50%;
+    inline-size: auto;
+    margin-block-start: 50px;
 }
 
 .earth {
-    height: 100%;
-    margin-top: 20px;
+    block-size: 100%;
+    margin-block-start: 20px;
 }
 
 .five {
-    height: fit-content;
-    width: 100%;
+    block-size: fit-content;
+    inline-size: 100%;
     background-color: #f5f5f7;
     display: flex;
     flex-direction: row;
@@ -315,15 +315,15 @@ ul.legal {
 }
 
 .divider {
-    border-top: 1px solid #0000008f;
+    border-block-start: 1px solid #0000008f;
     margin: 16px 0;
-    width: 100%;
+    inline-size: 100%;
 }
 
 /* Mac 1200px and 1919px */
 @media screen and (max-width: 1919px) {
     .desktop {
-        width: 100%;
+        inline-size: 100%;
     }
 }
 
@@ -339,33 +339,33 @@ ul.legal {
 /* iPad ve iPhone 768px (e.g., veya daha azı) */
 @media screen and (max-width: 767px) {
     .long1 {
-        height: 500px;
+        block-size: 500px;
         padding: 55px;
     }
     
     .long2 {
         flex-direction: column; /* Change to column layout */
-        height: auto; /* Allow the container to grow as needed */
+        block-size: auto; /* Allow the container to grow as needed */
     }
 
     .short {
-        width: 100%; /* Take full width */
-        height: 500px;
-        border-left-width: 0; /* Remove left border */
-        border-right-width: 0; /* Remove right border */
+        inline-size: 100%; /* Take full width */
+        block-size: 500px;
+        border-inline-start-width: 0; /* Remove left border */
+        border-inline-end-width: 0; /* Remove right border */
     }
 
     #short-left {
-        border-top-width: 6px;
-        border-bottom-width: 6px;
-        border-left-width: 0px;
-        border-right-width: 0px;
+        border-block-start-width: 6px;
+        border-block-end-width: 6px;
+        border-inline-start-width: 0px;
+        border-inline-end-width: 0px;
     }
     
     #short-right {
-        border-top-width: 6px;
-        border-bottom-width: 6px;
-        border-left-width: 0px;
-        border-right-width: 0px;
+        border-block-start-width: 6px;
+        border-block-end-width: 6px;
+        border-inline-start-width: 0px;
+        border-inline-end-width: 0px;
     }
 }
