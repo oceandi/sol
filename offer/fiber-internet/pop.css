@@ -73,13 +73,3 @@
 .submit-button:hover {
     background-color: #0077ed;
 }
-
-.info-button {
-    background: none;
-    border: none;
-    width: 185px;
-    cursor: pointer;
-    text-align: left;
-    padding: 0;
-    margin: 0;
-}

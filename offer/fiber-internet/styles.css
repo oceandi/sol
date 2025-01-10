@@ -1,17 +1,9 @@
-.canvas{
+.desktop{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     flex-direction: column;
-}
-
-.navbar {
-    block-size: 44px;
-    inline-size: 100%;
-    background-color: #0000004a;
-    position: relative;
-    z-index: 10;
 }
 
 .content {
@@ -47,7 +39,7 @@
 .detail {
     display: flex;
     flex-direction: row;
-    block-size: 62px;
+    block-size: 106px;
     inline-size: 100%;
     justify-content: center;
     align-items: flex-end;
@@ -133,6 +125,17 @@
     font-size: 12px;
 }
 
+
+.info-button {
+    background: none;
+    border: none;
+    width: 185px;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
 .circle-button {
     inline-size: 19px; /* Adjust size */
     block-size: 19px; /* Adjust size */
@@ -180,8 +183,8 @@
 }
 
 .info-image-accessories {
-    height: 50px;
-    width: auto;
+    block-size: 50px;
+    inline-size: auto;
     margin: 5px;
 }
 
@@ -192,7 +195,7 @@
 }
 
 .tvlogo {
-    width: 38px;
+    inline-size: 38px;
     margin: 12px 4px 12px 4px;
 }
 
