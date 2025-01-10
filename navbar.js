@@ -6,7 +6,7 @@ function createNavbar() {
             </a>
             <div class="nwa">
                 <ul class="nav-menu">
-                    <li><a href="/offer/fiber-internet/index.html" draggable="false">Fiber</a></li>
+                    <li><a href="/offer/fiber-internet/" draggable="false">Fiber</a></li>
                     <li><a href="/offer/vdsl/index.html" draggable="false">VDSL</a></li>
                     <li><a href="/offer/superbox/index.html" draggable="false">SuperBox</a></li>
                     <li><a href="/offer/tv-plus/index.html" draggable="false">TV+</a></li>
