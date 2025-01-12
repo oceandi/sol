@@ -1,9 +1,7 @@
 RewriteEngine On
 
-# WWW'den WWW olmayan versiyona yönlendirme
 RewriteCond %{HTTP_HOST} ^www\.superonline-deha\.net$ [NC]
 RewriteRule (.*) https://superonline-deha.net/$1 [R=301,L]
 
-# index.html'i gizleme
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\.html\ HTTP/
 RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
