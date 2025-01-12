@@ -166,35 +166,35 @@ const formConfigs = {
         formType: 'dsl'
     },
 
-    d16mbps12m: {
+    d16mbps12mtv: {
         buttonId: 'dslButtond16-12m-tv',
         popupId: 'dslPopupd16-12m-tv',
         formId: 'dslFormd16-12m-tv',
         formType: 'dsl'
     },
 
-    d24mbps12m: {
+    d24mbps12mtv: {
         buttonId: 'dslButtond24-12m-tv',
         popupId: 'dslPopupd24-12m-tv',
         formId: 'dslFormd24-12m-tv',
         formType: 'dsl'
     },
 
-    d35mbps12m: {
+    d35mbps12mtv: {
         buttonId: 'dslButtond35-12m-tv',
         popupId: 'dslPopupd35-12m-tv',
         formId: 'dslFormd35-12m-tv',
         formType: 'dsl'
     },
 
-    d50mbps12m: {
+    d50mbps12mtv: {
         buttonId: 'dslButtond50-12m-tv',
         popupId: 'dslPopupd50-12m-tv',
         formId: 'dslFormd50-12m-tv',
         formType: 'dsl'
     },
 
-    d100mbps12m: {
+    d100mbps12mtv: {
         buttonId: 'dslButtond100-12m-tv',
         popupId: 'dslPopupd100-12m-tv',
         formId: 'dslFormd100-12m-tv',
