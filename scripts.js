@@ -113,3 +113,17 @@ class FormHandler {
 Object.values(formConfigs).forEach(config => {
     new FormHandler(config);
 });
+
+window.addEventListener('load', function() {
+    setTimeout(() => {
+        document.body.classList.remove('preload');
+        document.querySelector('.desktop').style.opacity = '1';
+        document.querySelector('.desktop').style.transition = 'opacity 0.3s ease';
+        
+        const spinner = document.querySelector('.loading-spinner');
+        spinner.style.opacity = '0';
+        spinner.style.transition = 'opacity 0.3s ease';
+        
+        setTimeout(() => spinner.remove(), 300);
+    }, 300);
+});
