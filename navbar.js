@@ -11,7 +11,7 @@ function createNavbar() {
                     <li><a href="/offer/superbox" draggable="false">SuperBox</a></li>
                     <li><a href="https://tvplus.com.tr/destek/sss" draggable="false">TV+</a></li>
                     <li><a href="/offer/aksesuarlar" draggable="false">Aksesuarlar</a></li>
-                    <li><a href="/offer/destek" draggable="false">Destek</a></li>
+                    <li><a href="https://www.superonline.net/yardim" draggable="false">Destek</a></li>
                 </ul>
             </div>
             <div class="hamburger" onclick="toggleMenu()">
